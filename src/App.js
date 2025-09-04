@@ -16,7 +16,7 @@ export default function BarkAndSparkleSite() {
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2 font-semibold text-slate-900 text-lg">
-            <img src="/uploads/Logo_white_background_converted.png" alt="Bark & Sparkle Logo" className="h-10 w-auto"/>
+            <img src="/uploads/Logo_transparent.png" alt="Bark & Sparkle Logo" className="h-10 w-auto"/>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#about" className="hover:text-slate-900 text-slate-600">About</a>
