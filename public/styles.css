@@ -1,15 +1,16 @@
-/* Gallery (square + compact) */
+/* Gallery (square, compact, head-friendly crop) */
 .gallery-grid{
   margin-top:14px;
   display:grid;
-  gap:8px; /* tighter spacing */
+  gap:8px; /* compact spacing */
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 }
 
 .gallery-grid img{
   width:100%;
-  aspect-ratio: 1 / 1; /* square tiles */
+  aspect-ratio: 1 / 1;         /* square tiles */
   object-fit: cover;
+  object-position: 50% 20%;    /* bias toward top so heads aren’t cut off */
   border-radius:12px;
   box-shadow:0 3px 10px rgba(16,24,40,.08);
   transition: transform .18s ease, box-shadow .18s ease;
@@ -20,7 +21,7 @@
   box-shadow:0 8px 20px rgba(16,24,40,.12);
 }
 
-/* Fallback for older browsers */
+/* Fallback if aspect-ratio isn't supported (older browsers) */
 @supports not (aspect-ratio: 1 / 1){
   .gallery-grid img{
     height: clamp(140px, 18vw, 200px);
