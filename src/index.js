@@ -4,8 +4,4 @@ import './index.css';
 import BarkAndSparkleSite from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <BarkAndSparkleSite />
-  </React.StrictMode>
-);
+root.render(<React.StrictMode><BarkAndSparkleSite /></React.StrictMode>);
